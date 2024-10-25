@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import sys
 import math
-from typing import Any, TypeVar
+from typing import Any
 
 
 if sys.version_info < (3, 11):
@@ -11,16 +11,15 @@ else:
     from typing import Self
 
 
-
 class LabUnc:
     @staticmethod
     def combine(a: float, b: float) -> float:
         return a + b
-    
+
     rounding_rule = 1.0
     "This is the number to round at for display, lab rule is 1, particle physics uses 3.54"
 
-    def __init__(self, number: float, uncertainty: float = 0.0 ) -> None:
+    def __init__(self, number: float, uncertainty: float = 0.0) -> None:
         self.n = number
         self.s = abs(uncertainty)
 
