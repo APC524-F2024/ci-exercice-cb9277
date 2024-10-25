@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0 # Use the latest stable version
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+  - repo: https://github.com/charliermarsh/ruff
+    rev: v0.0.287 # Replace with the latest version at the time
+    hooks:
+      - id: ruff
+        args: ["--extend-select", "B", "I", "RUF", "UP"]
+
+  - repo: https://github.com/astral-sh/ruff-format
+    rev: v0.0.6 # Use the latest stable version
+    hooks:
+      - id: ruff-format
