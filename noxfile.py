@@ -6,6 +6,7 @@ python_versions = ["3.9", "3.10", "3.11", "3.12", "3.13"]
 def tests(session):
     """Run the test suite."""
     session.install(".[test]")
+    session.env["PYTHONPATH"] = "src"
     session.run("pytest")
 
 @nox.session
