@@ -27,7 +27,7 @@ jobs:
         run: pre-commit clean
 
       - name: Run pre-commit
-        run: pre-commit run --all-files --show-diff-on-failure
+        run: pre-commit run --all-files
 
   tests:
     name: Run Tests
