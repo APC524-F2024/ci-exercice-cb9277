@@ -26,11 +26,11 @@ jobs:
       - name: Clear pre-commit cache
         run: pre-commit clean
 
-      - name: Run pre-commit
-        run: pre-commit run --all-files --show-diff-on-failure
-
       - name: Display pre-commit log
         run: cat /home/runner/.cache/pre-commit/pre-commit.log || echo "Log not found"
+
+      - name: Run pre-commit
+        run: pre-commit run --all-files --show-diff-on-failure
 
   tests:
     name: Run Tests
