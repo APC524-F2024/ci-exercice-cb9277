@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "homework-3"
+name = "ci-exercise-cb9277"
 version = "0.1.0"
 requires-python = ">=3.9"
 dependencies = ['typing_extensions; python_version < "3.11"']

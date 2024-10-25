@@ -20,11 +20,11 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Clear pre-commit cache
-        run: pre-commit clean
-
       - name: Install pre-commit
         run: pip install pre-commit
+
+      - name: Clear pre-commit cache
+        run: pre-commit clean
 
       - name: Run pre-commit
         run: pre-commit run --all-files --show-diff-on-failure
