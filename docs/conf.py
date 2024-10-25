@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information -----------------------------------------------------
-project = 'ci_exercice_cb9277'
+project = 'homework-3'
 
 # -- General configuration ---------------------------------------------------
 extensions = [
