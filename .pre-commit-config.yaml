@@ -10,5 +10,5 @@ repos:
     rev: v0.7.1
     hooks:
       - id: ruff
-        args: ["--extend-select", "--fix"]
+        args: ["--extend-select=B,I,RUF,UP", "--fix"]
       - id: ruff-format
