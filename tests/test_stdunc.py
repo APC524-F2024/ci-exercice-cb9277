@@ -1,8 +1,9 @@
-from unc import StdUnc
-from uncertainties import ufloat
 import itertools
-import pytest
 
+import pytest
+from uncertainties import ufloat
+
+from unc import StdUnc
 
 CASES = ((10, 1), (10, 2), (20, 0.1), (10, 0.1), (0.1234, 0.02))
 pairs = pytest.mark.parametrize("a,b", list(itertools.permutations(CASES, 2)))

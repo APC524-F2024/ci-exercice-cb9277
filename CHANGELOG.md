@@ -21,11 +21,11 @@ src/unc/__init__.py
  * line 48
     def __add__(self: Self, other: LabUnc) -> Self:
         return self.__class__(self.n + other.n, self.combine(self.s, other.s))
- 
+
  * line 51
     def __sub__(self: Self, other: LabUnc) -> Self:
         return self.__class__(self.n - other.n, self.combine(self.s, other.s))
- 
+
  * line 54
     def __mul__(self: Self, other: LabUnc) -> Self:
         C = self.n * other.n
