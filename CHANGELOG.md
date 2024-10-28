@@ -1,7 +1,7 @@
 # WIP
 
 
-# Version 0.1: start of assignment
+# Before pre-commit
 
 ## Changes:
 
@@ -33,3 +33,5 @@ src/unc/__init__.py
  * line 59
     def __truediv__(self: Self, other: LabUnc) -> Self:
          C = self.n / other.n
+
+# Afterwards, I ran pre-commit locally and pushed formatting changes, and that commit passed the pre-commit checks
